@@ -32,18 +32,18 @@ export default function amazon() {
           </div>
         </div>
       </div>
-      <div className="p-12 flex border-b">
+      <div className="p-12 flex border-b ">
         <Link
           href="/"
           className="hover:bg-gray-300 hover:text-gray-700 rounded p-1.5"
         >
           <BiArrowBack className="w-6 h-6" />
         </Link>
-        <div className="max-w-3xl mx-auto flex justify-center">
+        <div className="max-w-3xl mx-auto flex justify-center ">
           <h1 className=" text-4xl">Whathicket</h1>
         </div>
       </div>
-      <div className="p-12">
+      <div className="p-12 max-w-7xl mx-auto">
         <p>
           Seja bem vindo a instalação do Whaticket, siga o passo a passo a
           abaixo detalhadamente:
@@ -62,7 +62,7 @@ export default function amazon() {
         </div>
         <Clip />
       </div>
-      <div className="m-12 mt-0">
+      <div className="m-12 mt-0 max-w-7xl mx-auto">
         <Link
           target="_blank"
           className="bg-gray-500 rounded p-1.5 "
@@ -72,7 +72,7 @@ export default function amazon() {
         </Link>
       </div>
       <hr />
-      <div className="p-12">
+      <div className="p-12 max-w-7xl mx-auto">
         <p>Com o terminal aberto, vamos iniciar:</p>
       </div>
       <div>
@@ -150,16 +150,10 @@ mysql> exit;`}
           textoInicial={`sudo apt update
 `}
         />
-        <Block
-          textoInicial={`sudo usermod -aG mysql ${`USER`}
-`}
-        />
-        <Block
-          textoInicial={`su - ${`USER`}
-`}
-        />
+        <Block textoInicial={"sudo usermod -aG mysql ${USER}"} />
+        <Block textoInicial={"su - ${USER}"} />
         <hr />
-        <div className="p-12">
+        <div className="p-12 max-w-7xl mx-auto">
           <p>
             Desconectar o bitivise do usuário Root e conectar com o usuário
             deploy usando a senha criada.

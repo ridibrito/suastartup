@@ -112,6 +112,12 @@ export default function Home() {
                   Bitivise
                 </li>
               </Link>
+              <Link href="ferramentas/vscode">
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  VS Code
+                </li>
+              </Link>
               <Link href="ferramentas/cloudflare">
                 <li className="flex items-center gap-2 hover:text-blue-500">
                   <AiOutlineFileText />
