@@ -112,6 +112,12 @@ export default function Home() {
                   Bitivise
                 </li>
               </Link>
+              <Link href="ferramentas/cloudflare">
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  Cloudflare
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

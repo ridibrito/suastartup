@@ -1,9 +1,10 @@
 import { BiArrowBack } from "react-icons/bi";
+import { FaDownload } from "react-icons/fa";
 
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Hetzner() {
+export default function bitivise() {
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#000016] via-[#001B47] to-[#003E77]">
@@ -37,24 +38,24 @@ export default function Hetzner() {
         </Link>
 
         <h1 className="max-w-3xl mx-auto flex justify-center text-4xl">
-          Hetzner
+          Cloudflaure
         </h1>
       </div>
       <div className="p-12 max-w-7xl mx-auto">
         {" "}
+        <p>Hospedagem de DNS grátis!</p>
         <p>
-          Se você está procurando o servidor em nuvem com a melhor relação
-          preço-desempenho, precisa de energia não compartilhada para suas
-          cargas de trabalho de produção ou quer aproveitar a arquitetura Arm64,
-          temos uma opção para você.
+          DNS rápido, seguro, resistente a DDoS Análise de dados e relatórios
+          disponíveis. Não é preciso trocar o provedor de hospedagem para usar o
+          DNS da Cloudflare.
         </p>
-        <div className="mt-5 underline">
+        <div className="mt-5">
           <Link
             target="_blank"
             className="flex items-center gap-2"
-            href="https://www.hetzner.com/"
+            href="https://www.cloudflare.com/pt-br/"
           >
-            Criar conta Hetzner.
+            Clique aqui e crie sua conta!
           </Link>
         </div>
       </div>

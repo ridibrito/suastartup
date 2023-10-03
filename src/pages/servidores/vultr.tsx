@@ -50,6 +50,7 @@ export default function Vultr() {
         </p>
         <div className="mt-5 underline">
           <Link
+            target="_blank"
             className="flex items-center gap-2"
             href="https://www.vultr.com/?ref=9545089"
           >
