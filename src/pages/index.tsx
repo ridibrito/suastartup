@@ -97,6 +97,31 @@ export default function Home() {
               </Link>
             </ul>
           </div>
+          <div>
+            <div>
+              <h2 className="border-b flex items-center gap-3">
+                <AiOutlineDatabase />
+                DOMÍNIO
+              </h2>
+            </div>
+            <ul className="mt-3">
+              <Link
+                target="_blank"
+                href="https://hostinger.com.br?REFERRALCODE=1RICARDODEB51"
+              >
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  Hostinger
+                </li>
+              </Link>
+              <Link target="_blank" href="https://registro.br/">
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  Registro Br
+                </li>
+              </Link>
+            </ul>
+          </div>
 
           <div>
             <div>

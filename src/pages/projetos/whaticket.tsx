@@ -102,7 +102,7 @@ export default function amazon() {
 `}
         />
         <Textarea
-          textArea={`mysql> CREATE DATABASE coruss CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+          textArea={`mysql> CREATE DATABASE whaticket CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 mysql> USE mysql;
 mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
 mysql> FLUSH PRIVILEGES;
@@ -164,17 +164,18 @@ mysql> exit;`}
 `}
         />
         <Block
-          textoInicial={`unzip corussChat.zip
+          textoInicial={`unzip whaticket.zip
 `}
         />
         <Block
-          textoInicial={`cp corussChat/backend/.env.example corussChat/backend/.env
+          textoInicial={`cp whaticket/backend/.env.example whaticket/backend/.env
 `}
         />
         <Block
           textoInicial={`nano /backend/.env
 `}
         />
+        <p>Mudar informações de domínio!</p>
         <Textarea
           rows={15}
           textArea={`NODE_ENV=
@@ -188,7 +189,7 @@ DB_DIALECT=mysql
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=
-DB_NAME=coruss
+DB_NAME=whaticket
 
 JWT_SECRET=saKPKKOxzczxcnscndcssccdsddngfsacxcs@Ers21vhhghee
 JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
@@ -207,7 +208,7 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
 `}
         />
         <Block
-          textoInicial={`cd corussChat/backend
+          textoInicial={`cd whaticket/backend
 `}
         />
         <Block
@@ -229,7 +230,7 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
 `}
         />
         <Block
-          textoInicial={`pm2 start dist/server.js --name corussChat-backend
+          textoInicial={`pm2 start dist/server.js --name whaticket-backend
 `}
         />
         <Block
@@ -253,6 +254,7 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
           textoInicial={`nano .env
 `}
         />
+        <p>Mudar informações de domínio!</p>
         <Block
           textoInicial={`REACT_APP_BACKEND_URL = https://back.coruss.com.br
 `}
@@ -263,7 +265,7 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
         />
         <hr />
         <Block
-          textoInicial={`pm2 start server.js --name corussChat-frontend
+          textoInicial={`pm2 start server.js --name whaticket-frontend
 `}
         />
         <Block
@@ -283,9 +285,10 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
 `}
         />
         <Block
-          textoInicial={`psudo nano /etc/nginx/sites-available/corussChat-frontend
+          textoInicial={`psudo nano /etc/nginx/sites-available/whaticket-frontend
 `}
         />
+        <p>Mudar informações de domínio!</p>
         <Textarea
           rows={15}
           textArea={`server {
@@ -305,13 +308,15 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
              }`}
         />
         <Block
-          textoInicial={`sudo cp /etc/nginx/sites-available/corussChat-frontend /etc/nginx/sites-available/corussChat-backend
+          textoInicial={`sudo cp /etc/nginx/sites-available/whaticket-frontend /etc/nginx/sites-available/whaticket-backend
 `}
         />
         <Block
-          textoInicial={`sudo nano /etc/nginx/sites-available/corussChat-backend
+          textoInicial={`sudo nano /etc/nginx/sites-available/whaticket-backend
 `}
         />
+        <p>Mudar informações de domínio!</p>
+
         <Textarea
           rows={15}
           textArea={`server {
@@ -339,11 +344,11 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
 `}
         />
         <Block
-          textoInicial={`sudo ln -s /etc/nginx/sites-available/corussChat-frontend /etc/nginx/sites-enabled
+          textoInicial={`sudo ln -s /etc/nginx/sites-available/whaticket-frontend /etc/nginx/sites-enabled
 `}
         />
         <Block
-          textoInicial={`sudo ln -s /etc/nginx/sites-available/corussChat-backend /etc/nginx/sites-enabled
+          textoInicial={`sudo ln -s /etc/nginx/sites-available/whaticket-backend /etc/nginx/sites-enabled
 `}
         />
         <Block
@@ -379,16 +384,31 @@ JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
           textoInicial={`sudo snap install notes
 `}
         />
-        <Textarea
-          rows={8}
-          textArea={`
-          sudo ufw status
-          sudo ufw enable
-          sudo ufw allow 22
-          sudo ufw allow 80
-          sudo ufw allow 443
-          sudo ufw status`}
+        <Block
+          textoInicial={` sudo ufw status
+`}
         />
+        <Block
+          textoInicial={` sudo ufw enable
+`}
+        />
+        <Block
+          textoInicial={`  sudo ufw allow 22
+`}
+        />
+        <Block
+          textoInicial={` sudo ufw allow 80
+`}
+        />
+        <Block
+          textoInicial={`  sudo ufw allow 443
+`}
+        />
+        <Block
+          textoInicial={`  sudo ufw status
+`}
+        />
+
         <Block
           textoInicial={`sudo snap install --classic certbot
 `}
