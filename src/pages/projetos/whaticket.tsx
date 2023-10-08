@@ -62,7 +62,7 @@ export default function amazon() {
         </div>
         <Clip />
       </div>
-      <div className="m-12 mt-0 max-w-7xl mx-auto">
+      <div className="m-12 mt-0 max-w-3xl mx-auto">
         <Link
           target="_blank"
           className="bg-gray-500 rounded p-1.5 "
@@ -72,349 +72,39 @@ export default function amazon() {
         </Link>
       </div>
       <hr />
-      <div className="p-12 max-w-7xl mx-auto">
+      <div className="p-12 max-w-3xl mx-auto">
         <p>Com o terminal aberto, vamos iniciar:</p>
       </div>
       <div>
         <Block
-          textoInicial={`sudo apt update && sudo apt upgrade
+          textoInicial={`sudo apt -y update && apt -y upgrade
 `}
         />
         <Block
-          textoInicial={`sudo su root
+          textoInicial={`sudo apt install -y git
 `}
         />
         <Block
-          textoInicial={`apt install mysql-server
+          textoInicial={`git clone https://github.com/ridibrito/instalador.git
 `}
         />
-        <Block
-          textoInicial={`mysql --version
-`}
-        />
-        <Block
-          textoInicial={`sudo systemctl status mysql
-
-`}
-        />
-        <Block
-          textoInicial={`sudo mysql -u root
-`}
-        />
-        <Textarea
-          textArea={`mysql> CREATE DATABASE whaticket CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-mysql> USE mysql;
-mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
-mysql> FLUSH PRIVILEGES;
-mysql> exit;`}
-          rows={5}
-        />
-        <Block
-          textoInicial={`service mysql restart
-`}
-        />
-        <Block
-          textoInicial={`sudo su root
-`}
-        />
-        <Block
-          textoInicial={`adduser deploy
-`}
-        />
-        <Block
-          textoInicial={`usermod -aG sudo deploy
-`}
-        />
-        <Block
-          textoInicial={`su deploy
-`}
-        />
-        <Block
-          textoInicial={`sudo apt update && sudo apt upgrade
-`}
-        />
-        <hr />
-        <Block
-          textoInicial={`curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-`}
-        />
-        <Block
-          textoInicial={`sudo apt-get install -y nodejs
-`}
-        />
-        <Block
-          textoInicial={`sudo apt install apt-transport-https ca-certificates curl software-properties-common
-`}
-        />
-        <Block
-          textoInicial={`sudo apt update
-`}
-        />
-        <Block textoInicial={"sudo usermod -aG mysql ${USER}"} />
-        <Block textoInicial={"su - ${USER}"} />
-        <hr />
-        <div className="p-12 max-w-7xl mx-auto">
-          <p>
-            Desconectar o bitivise do usuário Root e conectar com o usuário
-            deploy usando a senha criada.
-          </p>
+        <div className="p-12 max-w-3xl mx-auto">
+          <p>Vamos torna-lo executável</p>
         </div>
         <Block
-          textoInicial={`sudo apt install unzip
+          textoInicial={`sudo chmod +x ./instalador/whaticket
 `}
         />
+        <div className="p-12 max-w-3xl mx-auto">
+          <p>Navegue até a pasta e rode o script</p>
+        </div>
         <Block
-          textoInicial={`unzip whaticket.zip
-`}
-        />
-        <Block
-          textoInicial={`cp whaticket/backend/.env.example whaticket/backend/.env
-`}
-        />
-        <Block
-          textoInicial={`nano /backend/.env
-`}
-        />
-        <p>Mudar informações de domínio!</p>
-        <Textarea
-          rows={15}
-          textArea={`NODE_ENV=
-BACKEND_URL=https://back.coruss.com.br
-FRONTEND_URL=https://chat.coruss.com.br
-PORT=8080
-PROXY_PORT=443
-CHROME_BIN=/usr/bin/google-chrome-stable
+          textoInicial={`cd ./instalador
 
-DB_DIALECT=mysql
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=
-DB_NAME=whaticket
-
-JWT_SECRET=saKPKKOxzczxcnscndcssccdsddngfsacxcs@Ers21vhhghee
-JWT_REFRESH_SECRET=kldflhxvcxcxkkkjxhchghjgkdsdsccsd4234asdasdcxcc3`}
-        />
-        <Textarea
-          rows={5}
-          textArea={`sudo apt-get install -y libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
-          `}
-        />
-        <Block
-          textoInicial={`wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 `}
         />
         <Block
-          textoInicial={`sudo apt install ./google-chrome-stable_current_amd64.deb
-`}
-        />
-        <Block
-          textoInicial={`cd whaticket/backend
-`}
-        />
-        <Block
-          textoInicial={`npm install
-`}
-        />
-        <hr />
-        <Block
-          textoInicial={`npx sequelize db:migrate
-`}
-        />
-        <Block
-          textoInicial={`npx sequelize db:seed:all
-`}
-        />
-        <hr />
-        <Block
-          textoInicial={`sudo npm install -g pm2
-`}
-        />
-        <Block
-          textoInicial={`pm2 start dist/server.js --name whaticket-backend
-`}
-        />
-        <Block
-          textoInicial={`pm2 startup ubuntu -u deploy
-`}
-        />
-        <Block
-          textoInicial={`sudo env PATH=$PATH:/usr/bin pm2 startup ubuntu -u deploy --hp /home/deploy
-`}
-        />
-        <hr />
-        <Block
-          textoInicial={`cd ../frontend
-`}
-        />
-        <Block
-          textoInicial={`npm install --force
-`}
-        />
-        <Block
-          textoInicial={`nano .env
-`}
-        />
-        <p>Mudar informações de domínio!</p>
-        <Block
-          textoInicial={`REACT_APP_BACKEND_URL = https://back.coruss.com.br
-`}
-        />
-        <Block
-          textoInicial={`npm run build
-`}
-        />
-        <hr />
-        <Block
-          textoInicial={`pm2 start server.js --name whaticket-frontend
-`}
-        />
-        <Block
-          textoInicial={`pm2 save
-`}
-        />
-        <Block
-          textoInicial={`pm2 list
-`}
-        />
-        <Block
-          textoInicial={`sudo apt install nginx
-`}
-        />
-        <Block
-          textoInicial={`sudo rm /etc/nginx/sites-enabled/default
-`}
-        />
-        <Block
-          textoInicial={`psudo nano /etc/nginx/sites-available/whaticket-frontend
-`}
-        />
-        <p>Mudar informações de domínio!</p>
-        <Textarea
-          rows={15}
-          textArea={`server {
-            server_name chat.coruss.com.br;
-          
-            location / {
-              proxy_pass http://127.0.0.1:3333;
-              proxy_http_version 1.1;
-              proxy_set_header Upgrade $http_upgrade;
-              proxy_set_header Connection 'upgrade';
-              proxy_set_header Host $host;
-              proxy_set_header X-Real-IP $remote_addr;
-              proxy_set_header X-Forwarded-Proto $scheme;
-              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-              proxy_cache_bypass $http_upgrade;
-            }
-             }`}
-        />
-        <Block
-          textoInicial={`sudo cp /etc/nginx/sites-available/whaticket-frontend /etc/nginx/sites-available/whaticket-backend
-`}
-        />
-        <Block
-          textoInicial={`sudo nano /etc/nginx/sites-available/whaticket-backend
-`}
-        />
-        <p>Mudar informações de domínio!</p>
-
-        <Textarea
-          rows={15}
-          textArea={`server {
-            server_name back.coruss.com.br;
-          
-            location / {
-              proxy_pass http://127.0.0.1:8080;
-              proxy_http_version 1.1;
-              proxy_set_header Upgrade $http_upgrade;
-              proxy_set_header Connection 'upgrade';
-              proxy_set_header Host $host;
-              proxy_set_header X-Real-IP $remote_addr;
-              proxy_set_header X-Forwarded-Proto $scheme;
-              proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-              proxy_cache_bypass $http_upgrade;
-            }
-            }`}
-        />
-        <Block
-          textoInicial={`cd /etc/nginx/sites-available/
-`}
-        />
-        <Block
-          textoInicial={`ls
-`}
-        />
-        <Block
-          textoInicial={`sudo ln -s /etc/nginx/sites-available/whaticket-frontend /etc/nginx/sites-enabled
-`}
-        />
-        <Block
-          textoInicial={`sudo ln -s /etc/nginx/sites-available/whaticket-backend /etc/nginx/sites-enabled
-`}
-        />
-        <Block
-          textoInicial={`sudo nginx -t
-`}
-        />
-        <Block
-          textoInicial={`sudo service nginx restart
-`}
-        />
-        <Block
-          textoInicial={`sudo nano /etc/nginx/nginx.conf
-`}
-        />
-        <Block
-          textoInicial={`client_max_body_size 20M;
-          # HANDLE BIGGER UPLOADS
-`}
-        />
-        <Block
-          textoInicial={`sudo nginx -t        
-`}
-        />
-        <Block
-          textoInicial={`sudo service nginx restart
-`}
-        />
-        <Block
-          textoInicial={`sudo apt-get install snapd
-`}
-        />
-        <Block
-          textoInicial={`sudo snap install notes
-`}
-        />
-        <Block
-          textoInicial={` sudo ufw status
-`}
-        />
-        <Block
-          textoInicial={` sudo ufw enable
-`}
-        />
-        <Block
-          textoInicial={`  sudo ufw allow 22
-`}
-        />
-        <Block
-          textoInicial={` sudo ufw allow 80
-`}
-        />
-        <Block
-          textoInicial={`  sudo ufw allow 443
-`}
-        />
-        <Block
-          textoInicial={`  sudo ufw status
-`}
-        />
-
-        <Block
-          textoInicial={`sudo snap install --classic certbot
-`}
-        />
-        <Block
-          textoInicial={`sudo certbot --nginx
+          textoInicial={`sudo ./whaticket
 `}
         />
       </div>

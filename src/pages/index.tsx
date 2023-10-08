@@ -151,6 +151,25 @@ export default function Home() {
               </Link>
             </ul>
           </div>
+          <div>
+            <div>
+              <h2 className="border-b flex items-center gap-3">
+                <AiOutlineTool />
+                Help
+              </h2>
+            </div>
+            <ul className="mt-3">
+              <Link
+                target="_blank"
+                href="https://drive.google.com/drive/folders/14DTH1bS4PGPuYN5T6baph4XWQ97ath1U?usp=sharing"
+              >
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  Drive
+                </li>
+              </Link>
+            </ul>
+          </div>
         </div>
         <div>
           <div className="sm:flex flex-col-2 gap-12 max-w-5xl mx-auto p-12  pt-0 space-y-5 sm:space-y-0">

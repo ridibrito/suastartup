@@ -22,7 +22,7 @@ function CopiarParaAreaDeTransferencia({
   };
 
   return (
-    <div className="bg-gray-800 max-w-7xl mx-auto my-2 flex items-center justify-between rounded-lg p-2 text-gray-300">
+    <div className="bg-gray-800 max-w-3xl mx-auto my-2 flex items-center justify-between rounded-lg p-2 text-gray-300">
       <pre className="mb-4">
         <code className="block items-center pt-2 pl-2">{textoInicial}</code>
       </pre>
