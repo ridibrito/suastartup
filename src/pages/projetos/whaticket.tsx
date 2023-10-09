@@ -85,21 +85,21 @@ export default function amazon() {
 `}
         />
         <Block
-          textoInicial={`git clone https://github.com/ridibrito/instalador.git
+          textoInicial={`git clone https://github.com/Sua-Startup/instalador-whaticket.git
 `}
         />
         <div className="p-12 max-w-3xl mx-auto">
           <p>Vamos torna-lo executável</p>
         </div>
         <Block
-          textoInicial={`sudo chmod +x ./instalador/whaticket
+          textoInicial={`sudo chmod +x ./instalador-whaticket/whaticket
 `}
         />
         <div className="p-12 max-w-3xl mx-auto">
           <p>Navegue até a pasta e rode o script</p>
         </div>
         <Block
-          textoInicial={`cd ./instalador
+          textoInicial={`cd ./instalador-whaticket
 
 `}
         />
