@@ -81,6 +81,10 @@ export default function amazon() {
 `}
         />
         <Block
+          textoInicial={`sudo dpkg-reconfigure tzdata
+`}
+        />
+        <Block
           textoInicial={`sudo apt install -y git
 `}
         />
