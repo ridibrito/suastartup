@@ -3,7 +3,7 @@ import { BiArrowBack } from "react-icons/bi";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Vultr() {
+export default function Contabo() {
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#000016] via-[#001B47] to-[#003E77]">
@@ -37,7 +37,7 @@ export default function Vultr() {
         </Link>
 
         <h1 className="max-w-3xl mx-auto flex justify-center text-4xl">
-          Vultr
+          Contabo
         </h1>
       </div>
       <div className="p-12 max-w-7xl mx-auto">
@@ -52,9 +52,9 @@ export default function Vultr() {
           <Link
             target="_blank"
             className="flex items-center gap-2"
-            href="https://www.vultr.com/?ref=9545089"
+            href="https://contabo.com/en"
           >
-            Ganhe U$ 100 para testar a Vultr.
+            Ir para Contabo
           </Link>
         </div>
       </div>

@@ -89,10 +89,10 @@ export default function Home() {
                   Hetzner
                 </li>
               </Link>
-              <Link href="servidores/vultr">
+              <Link href="servidores/Contabo">
                 <li className="flex items-center gap-2 hover:text-blue-500">
                   <AiOutlineFileText />
-                  Vultr
+                  Contabo
                 </li>
               </Link>
             </ul>
