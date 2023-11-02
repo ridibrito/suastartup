@@ -29,18 +29,8 @@ export default function Home() {
               height="80"
             />
           </Link>
-          <div className="flex items-center gap-3">
-            <Image
-              className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-              src="/user.png"
-              alt="Bordered avatar"
-              width="100"
-              height="50"
-            />
-            <p className="hidden text-xs">Ricardo.brasiliadf@hotmail.com</p>
-          </div>
         </div>
-        <div className="max-w-3xl mx-auto flex justify-center text-4xl mt-16">
+        <div className="max-w-3xl text-gray-300 mx-auto flex justify-center text-4xl mt-16">
           <h1>Documentações</h1>
         </div>
         <div className="max-w-5xl mx-auto mt-6">
@@ -83,12 +73,6 @@ export default function Home() {
               </h2>
             </div>
             <ul className="mt-3">
-              <Link href="servidores/hetzner">
-                <li className="flex items-center gap-2 hover:text-blue-500">
-                  <AiOutlineFileText />
-                  Hetzner
-                </li>
-              </Link>
               <Link href="servidores/Contabo">
                 <li className="flex items-center gap-2 hover:text-blue-500">
                   <AiOutlineFileText />
@@ -186,96 +170,6 @@ export default function Home() {
                   <li className="flex items-center gap-2 hover:text-blue-500">
                     <AiOutlineFileText />
                     Whaticket
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText />
-                    Typebot
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText />
-                    Chatwoot
-                  </li>
-                </Link>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <h2 className="border-b flex items-center gap-3">
-                  <AiOutlineFunnelPlot />
-                  CRM
-                </h2>
-              </div>
-
-              <ul className="mt-3">
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <h2 className="border-b flex items-center gap-3">
-                  <MdOutlineDeliveryDining />
-                  Delivery
-                </h2>
-              </div>
-
-              <ul className="mt-3">
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-              </ul>
-            </div>
-            <div>
-              <div>
-                <h2 className="border-b flex items-center gap-3">
-                  <BiMoneyWithdraw />
-                  Financeiro
-                </h2>
-              </div>
-
-              <ul className="mt-3">
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
-                  </li>
-                </Link>
-                <Link href="#">
-                  <li className="flex items-center gap-2 hover:text-blue-500">
-                    <AiOutlineFileText /> Em breve
                   </li>
                 </Link>
               </ul>
