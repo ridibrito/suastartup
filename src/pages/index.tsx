@@ -154,6 +154,34 @@ export default function Home() {
               </Link>
             </ul>
           </div>
+          <div>
+            <div>
+              <h2 className="border-b flex items-center gap-3">
+                <AiOutlineTool />
+                Localhost
+              </h2>
+            </div>
+            <ul className="mt-3">
+              <Link
+                target="_blank"
+                href="https://www.apachefriends.org/download.html"
+              >
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  Xampp
+                </li>
+              </Link>
+              <Link
+                target="_blank"
+                href="https://nodejs.org/dist/v14.17.3/node-v14.17.3-x64.msi"
+              >
+                <li className="flex items-center gap-2 hover:text-blue-500">
+                  <AiOutlineFileText />
+                  Node.js
+                </li>
+              </Link>
+            </ul>
+          </div>
         </div>
         <div>
           <div className="sm:flex flex-col-2 gap-12 max-w-5xl mx-auto p-12  pt-0 space-y-5 sm:space-y-0">
