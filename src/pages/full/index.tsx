@@ -212,7 +212,7 @@ export default function Home() {
                     Whaticket 2.0
                   </li>
                 </Link>
-                <Link href="projetos/typebotfull">
+                <Link href="projetos/typebotFull">
                   <li className="flex items-center gap-2 hover:text-blue-500">
                     <AiOutlineFileText />
                     Typebot
