@@ -3,11 +3,10 @@ import { BiArrowBack } from "react-icons/bi";
 import Image from "next/image";
 import Link from "next/link";
 import Clip from "@/components/Clip";
-import Block from "@/components/block";
 
 import Textarea from "@/components/textarea";
 
-export default function Whaticket() {
+export default function Typebot() {
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#000016] via-[#001B47] to-[#003E77]">
@@ -30,27 +29,39 @@ export default function Whaticket() {
           <BiArrowBack className="w-6 h-6" />
         </Link>
         <div className="max-w-3xl mx-auto flex justify-center ">
-          <h1 className=" text-4xl">Whathicket</h1>
+          <h1 className=" text-4xl">Typebot</h1>
         </div>
       </div>
       <div className="p-12 max-w-7xl mx-auto">
         <p>
-          Seja bem vindo a instalação do Whaticket, siga o passo a passo a
-          abaixo detalhadamente:
+          Seja bem vindo a instalação do Typebot, siga o passo a passo a abaixo
+          detalhadamente:
         </p>
         <div className="mt-3">
           <p className="mt-2">
-            Crie 2 subdominios em seu Claudflare e aponte para o IP da sua VPS.
+            Crie 3 subdominios em seu Claudflare e aponte para o IP da sua VPS.
           </p>
           <div className="mt-2">
-            <span>Frontend : </span>
+            <span>
+              Frontend : É o local de edição (Ex:
+              typebot.seucliente.seudominio.com)
+            </span>
             <Clip />
-            <span>Backend : </span>
+            <span>
+              Bilder : É o dominio que aparece para o cliente (Ex:
+              web.seucliente.seudominio.com)
+            </span>
             <Clip />
-            <span>Senha servidor : </span>
+            <span>
+              Storage : Guarda arquivos (Ex: storage.seucliente.seudominio.com)
+            </span>
+            <Clip />
           </div>
+          <span>SMTP (Ex: smtp.gmail.com)</span>
+          <Clip />
+          <span>Senha app gmail</span>
+          <Clip />
         </div>
-        <Clip />
       </div>
       <div className="m-12 mt-0 max-w-3xl mx-auto">
         <Link
@@ -62,43 +73,17 @@ export default function Whaticket() {
         </Link>
       </div>
       <hr />
-      <div className="p-12 max-w-3xl mx-auto">
+
+      <div className="px-12 pt-12 max-w-3xl mx-auto">
         <p>Com o terminal aberto, vamos iniciar:</p>
       </div>
+      <div className="px-12 max-w-3xl mx-auto">
+        <p>Instalação na minha VPS:</p>
+      </div>
       <div>
-        <Block
-          textoInicial={`sudo apt -y update && apt -y upgrade
-`}
-        />
-        <Block
-          textoInicial={`sudo dpkg-reconfigure tzdata
-`}
-        />
-        <Block
-          textoInicial={`sudo apt install -y git
-`}
-        />
-        <Block
-          textoInicial={`git clone https://github.com/Sua-Startup/instalador-whaticket.git
-`}
-        />
-        <div className="p-12 max-w-3xl mx-auto">
-          <p>Vamos torna-lo executável</p>
-        </div>
-        <Block
-          textoInicial={`sudo chmod +x ./instalador-whaticket/whaticket
-`}
-        />
-        <div className="p-12 max-w-3xl mx-auto">
-          <p>Navegue até a pasta e rode o script</p>
-        </div>
-        <Block
-          textoInicial={`cd ./instalador-whaticket
-
-`}
-        />
-        <Block
-          textoInicial={`sudo ./whaticket
+        <Textarea
+          rows={3}
+          textArea={`sudo apt upgrade -y && sudo apt update && sudo apt install -y git && git clone https://github.com/Sua-Startup/SetupInstallTypebot.git && cd SetupInstallTypebot && sudo chmod +x install.sh && ./install.sh
 `}
         />
       </div>

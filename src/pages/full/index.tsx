@@ -203,13 +203,31 @@ export default function Home() {
                 <Link href="projetos/whaticket">
                   <li className="flex items-center gap-2 hover:text-blue-500">
                     <AiOutlineFileText />
-                    Whaticket
+                    Whaticket 1.0
                   </li>
                 </Link>
-                <Link href="projetos/typebot">
+                <Link href="projetos/whaticket2">
+                  <li className="flex items-center gap-2 hover:text-blue-500">
+                    <AiOutlineFileText />
+                    Whaticket 2.0
+                  </li>
+                </Link>
+                <Link href="projetos/typebotfull">
                   <li className="flex items-center gap-2 hover:text-blue-500">
                     <AiOutlineFileText />
                     Typebot
+                  </li>
+                </Link>
+                <Link href="projetos/evolution">
+                  <li className="flex items-center gap-2 hover:text-blue-500">
+                    <AiOutlineFileText />
+                    Evolution API
+                  </li>
+                </Link>
+                <Link href="projetos/chatwoot">
+                  <li className="flex items-center gap-2 hover:text-blue-500">
+                    <AiOutlineFileText />
+                    Chatwoot
                   </li>
                 </Link>
               </ul>

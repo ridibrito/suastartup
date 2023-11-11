@@ -7,7 +7,7 @@ import Block from "@/components/block";
 
 import Textarea from "@/components/textarea";
 
-export default function Whaticket() {
+export default function Evolution() {
   return (
     <>
       <div className="w-full bg-gradient-to-r from-[#000016] via-[#001B47] to-[#003E77]">
@@ -30,7 +30,7 @@ export default function Whaticket() {
           <BiArrowBack className="w-6 h-6" />
         </Link>
         <div className="max-w-3xl mx-auto flex justify-center ">
-          <h1 className=" text-4xl">Whathicket</h1>
+          <h1 className=" text-4xl">Evolution</h1>
         </div>
       </div>
       <div className="p-12 max-w-7xl mx-auto">

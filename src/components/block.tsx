@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 interface CopiarParaAreaDeTransferenciaProps {
   textoInicial: string;
+  rows?: number;
 }
 
 function CopiarParaAreaDeTransferencia({

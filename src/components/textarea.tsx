@@ -23,11 +23,11 @@ export default function Textarea({ message, textArea, rows }: TextAreaProps) {
 
   return (
     <>
-      <div className="relative rounded bg-gray-800 max-w-7xl mx-auto">
+      <div className="relative rounded bg-gray-800 max-w-3xl mx-auto">
         <textarea
           id="message"
           rows={rows}
-          className="bg-gray-800 w-full max-w-7xl mx-auto my-2 flex items-center justify-between rounded-lg p-2 text-gray-300"
+          className="bg-gray-800 w-full  my-2 flex items-center justify-between rounded-lg p-2 text-gray-300"
           value={texto}
           onChange={(e) => setTexto(e.target.value)}
         />
