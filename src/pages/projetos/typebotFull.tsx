@@ -83,7 +83,7 @@ export default function Typebot() {
       <div>
         <Textarea
           rows={3}
-          textArea={`sudo apt upgrade -y && sudo apt update && sudo apt install -y git && git clone https://github.com/Sua-Startup/SetupInstallTypebot.git && cd SetupInstallTypebot && sudo chmod +x install.sh && ./install.sh
+          textArea={`sudo apt upgrade -y && sudo apt update && sudo apt install -y git && git clone https://github.com/Sua-Startup/SetupInstall.git && cd SetupInstall && sudo chmod +x install.sh && ./install.sh
 `}
         />
       </div>
