@@ -12,7 +12,7 @@ export default function Whaticket2() {
     <>
       <div className="w-full bg-gradient-to-r from-[#000016] via-[#001B47] to-[#003E77]">
         <div className="max-w-7xl mx-auto flex justify-between items-center content-center py-4 px-24">
-          <Link href="/">
+          <Link href="/full">
             <Image
               src="/logo_dark.png"
               alt="capaSuaStartup"
@@ -24,7 +24,7 @@ export default function Whaticket2() {
       </div>
       <div className="p-12 flex border-b ">
         <Link
-          href="/"
+          href="/full"
           className="hover:bg-gray-300 hover:text-gray-700 rounded p-1.5"
         >
           <BiArrowBack className="w-6 h-6" />
@@ -71,34 +71,38 @@ export default function Whaticket2() {
 `}
         />
         <Block
-          textoInicial={`sudo dpkg-reconfigure tzdata
-`}
-        />
-        <Block
           textoInicial={`sudo apt install -y git
 `}
         />
         <Block
-          textoInicial={`git clone https://github.com/Sua-Startup/instalador-whaticket.git
+          textoInicial={`git clone https://github.com/Sua-Startup/instalador-whaticket-saas.git
+`}
+        />
+        <Block
+          textoInicial={`chmod -R  777 instalador-whaticket-saas
+`}
+        />
+        <Block
+          textoInicial={`ls && cd instalador-whaticket-saas && ls && ./install_primaria
 `}
         />
         <div className="p-12 max-w-3xl mx-auto">
-          <p>Vamos torna-lo executável</p>
+          <p>Link da versão do Whaticket-SaaS</p>
         </div>
         <Block
-          textoInicial={`sudo chmod +x ./instalador-whaticket/whaticket
+          textoInicial={`https://github.com/Sua-Startup/whaticket-saas.git
 `}
         />
         <div className="p-12 max-w-3xl mx-auto">
-          <p>Navegue até a pasta e rode o script</p>
+          <p>Login e senha</p>
         </div>
         <Block
-          textoInicial={`cd ./instalador-whaticket
+          textoInicial={`admin@admin.com
 
 `}
         />
         <Block
-          textoInicial={`sudo ./whaticket
+          textoInicial={`123456
 `}
         />
       </div>
