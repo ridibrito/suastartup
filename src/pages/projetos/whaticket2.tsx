@@ -75,22 +75,22 @@ export default function Whaticket2() {
 `}
         />
         <Block
-          textoInicial={`git clone https://github.com/Sua-Startup/instalador-whaticket-saas.git
+          textoInicial={`git clone https://github.com/ronandesign/Install_WhaticketSaaS_Comunidade
 `}
         />
         <Block
-          textoInicial={`chmod -R  777 instalador-whaticket-saas
+          textoInicial={`chmod -R  777 Install_WhaticketSaaS_Comunidade 
 `}
         />
         <Block
-          textoInicial={`ls && cd instalador-whaticket-saas && ls && ./install_primaria
+          textoInicial={`ls && cd Install_WhaticketSaaS_Comunidade && ls && ./install_primaria
 `}
         />
         <div className="p-12 max-w-3xl mx-auto">
           <p>Link da versão do Whaticket-SaaS</p>
         </div>
         <Block
-          textoInicial={`https://github.com/Sua-Startup/whaticket-saas.git
+          textoInicial={`https://github.com/ronandesign/whaticket-saas.git
 `}
         />
         <div className="p-12 max-w-3xl mx-auto">
